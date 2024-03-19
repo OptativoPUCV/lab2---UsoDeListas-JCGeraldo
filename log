@@ -2,3 +2,16 @@ Tue 19 Mar 2024 11:50:23 PM UTC:
  tests:  0|5
 total_score: 0/70
 2470171
+Tue 19 Mar 2024 11:58:25 PM UTC: 
+ exercises.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:48:18: error: invalid use of incomplete typedef ‘List’
+   48 |         *((int*)L->data[L->size - 1]) = i;
+      |                  ^~
+exercises.c:48:26: error: invalid use of incomplete typedef ‘List’
+   48 |         *((int*)L->data[L->size - 1]) = i;
+      |                          ^~
+Compilation failed
+dd67432

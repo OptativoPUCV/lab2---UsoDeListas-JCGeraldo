@@ -11,26 +11,26 @@
 //Funciones auxiliares que puedes utilizar para debuggear tus ejercicios
 //NO MODIFICAR
 void imprime_lista(List *L) {
-   int *dato;
-   dato = (int*)first(L);
-   printf("[");
-   while(dato != NULL) {
-      printf("%d ", *dato);
-      dato = (int*)next(L);
-   }
-   printf("]\n");
+    int *dato;
+    dato = (int*)first(L);
+    printf("[");
+    while(dato != NULL) {
+         printf("%d ", *dato);
+         dato = (int*)next(L);
+    }
+    printf("]\n");
 
 }
 
 //Ojo que la pila se vacía al imprimir y se imprime en orden inverso
 //NO MODIFICAR
 void imprime_y_vacia_pila(Stack *P) {
-   void *dato;
-   printf("[");
-   while((dato = pop(P)) != NULL) {
-      printf("%d ", *(int*)dato);
-   }
-   printf("]\n");
+    void *dato;
+    printf("[");
+    while((dato = pop(P)) != NULL) {
+         printf("%d ", *(int*)dato);
+    }
+    printf("]\n");
 }
 
 /* 
@@ -42,8 +42,12 @@ Al finalizar retorna la lista creada.
 */
 
 List* crea_lista() {
-   List* L = create_list();
-   return L;
+    List* L = create_list();
+    for(int i = 1; i <= 10; i++){
+        pushBack(L, (void*)malloc(sizeof(int)));
+        *((int*)L->data[L->size - 1]) = i;
+    }
+    return L;
 }
 
 /*
@@ -52,7 +56,7 @@ Crea una función que reciba una lista de enteros (int*) y
 retorne la suma de sus elementos.
 */
 int sumaLista(List *L) {
-   return 0;
+    return 0;
 }
 
 /*
@@ -86,6 +90,6 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 */
 
 int parentesisBalanceados(char *cadena) {
-   return 0;
+    return 0;
 }
 
