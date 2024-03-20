@@ -33,3 +33,18 @@ Wed 20 Mar 2024 12:07:13 AM UTC:
  tests:  3|2
 total_score: 40/70
 76ea6a5
+Wed 20 Mar 2024 12:13:12 AM UTC: 
+ exercises.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:48:16: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   48 |         numero = i;
+      |                ^
+exercises.c: In function ‘copia_pila’:
+exercises.c:96:12: error: unused variable ‘pila’ [-Werror=unused-variable]
+   96 |     Stack* pila = create_stack();
+      |            ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ebb2d8a
