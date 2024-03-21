@@ -96,3 +96,9 @@ exercises.c:96:22: error: initialization of ‘Stack *’ {aka ‘List *’} fro
 cc1: all warnings being treated as errors
 Compilation failed
 36aba75
+Thu 21 Mar 2024 05:52:04 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|1
+total_score: 50/70
+dd5f4a6
