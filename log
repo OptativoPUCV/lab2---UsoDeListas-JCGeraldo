@@ -102,3 +102,29 @@ Thu 21 Mar 2024 05:52:04 PM UTC:
  tests:  4|1
 total_score: 50/70
 dd5f4a6
+Thu 21 Mar 2024 05:56:50 PM UTC: 
+ exercises.c | 21 +++++++++++++++++++++
+ 1 file changed, 21 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:126:33: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  126 |             if(cadena[i] == ')' && *(char*)top(pila) == '(' ||
+      |                ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+exercises.c:128:34: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  128 |                 cadena[i] == '}' && *(char*)top(pila) == '{')){
+      |                 ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+exercises.c:128:62: error: expected statement before ‘)’ token
+  128 |                 cadena[i] == '}' && *(char*)top(pila) == '{')){
+      |                                                              ^
+exercises.c:126:13: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+  126 |             if(cadena[i] == ')' && *(char*)top(pila) == '(' ||
+      |             ^~
+exercises.c:128:63: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  128 |                 cadena[i] == '}' && *(char*)top(pila) == '{')){
+      |                                                               ^
+exercises.c:131:13: error: ‘else’ without a previous ‘if’
+  131 |             else
+      |             ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1970ad7
